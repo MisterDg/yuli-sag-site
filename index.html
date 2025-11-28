@@ -10,11 +10,13 @@
         *{box-sizing:border-box;margin:0;padding:0}
         body{font-family:'Rubik',sans-serif;background:#EFDFDA;color:#333;line-height:1.7}
         header{background:linear-gradient(135deg,#8B5449,#AD7768);color:#fff;padding:100px 20px 160px;text-align:center}
-        .logo{
-    width: 160px;                    /* קצת יותר גדול – נראה מרשים */
-    height: auto;                    /* חובה ל-SVG */
+        .logo {
+    display: inline-block;
+    width: 160px;       /* גודל מקורי לדסקטופ */
+    height: 160px;      /* גובה קשיח כדי למנוע קריסה */
+    object-fit: contain; /* <--- מונע מריחה/עיוות של הלוגו */
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)) drop-shadow(0 0 8px rgba(255,255,255,0.3));
-    background: transparent !important;      /* אין שום רקע */
+    background: transparent !important;
     padding: 0;
     border: none;
     border-radius: 0;
@@ -87,16 +89,10 @@
         }
         footer{background:#8B5449;color:#fff;text-align:center;padding:40px;font-size:0.95rem}
         @media (max-width: 768px) {
-            .logo {
-                display: inline-block;           /* <--- שורה חדשה וחשובה לתיקון */
-                width: 130px;
-                height: 130px;
-                filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)) drop-shadow(0 0 8px rgba(255,255,255,0.3));
-                background: transparent !important;
-                padding: 0;
-                border: none;
-                border-radius: 0;
-            }
+    .logo {
+        width: 130px !important;
+        height: 130px !important; /* גם במובייל גובה קשיח */
+    }
         }
     </style>
 </head>
