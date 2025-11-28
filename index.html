@@ -7,34 +7,31 @@
     <meta name="description" content="יוליה סגרון – עורכת דין ומגשרת מוסמכת בגירושין, ייפוי כוח מתמשך וייעוץ זוגי. תל אביב ▪ פרדס חנה כרכור ▪ זום">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
-        body {margin:0;font-family:'Rubik',sans-serif;background:#EFDFDA;color:#333;line-height:1.8;}
-        header {background:linear-gradient(135deg,#8B5449,#AD7768);color:#fff;padding:80px 20px 100px;text-align:center;position:relative;}
-        .logo {width:120px;height:120px;border-radius:50%;object-fit:contain;background:#fff;padding:10px;box-shadow:0 8px 25px rgba(0,0,0,0.2);}
-        h1 {font-size:2.8rem;margin:15px 0 10px;}
-        .subtitle {font-size:1.3rem;opacity:0.9;}
-        .container {max-width:1100px;margin:0 auto;padding:20px;}
-        .hero-img {max-width:420px;width:90%;border-radius:25px;box-shadow:0 15px 40px rgba(0,0,0,0.15);margin: -70px auto 50px;display:block;position:relative;z-index:2;}
-        h2 {color:#8B5449;text-align:center;font-size:2.3rem;margin:60px 0 30px;}
-        .intro-text {text-align:center;max-width:850px;margin:0 auto 50px;font-size:1.1rem;}
-        .motto {background:#F2B8B8;color:#8B5449;padding:45px;border-radius:20px;font-size:1.4rem;font-style:italic;text-align:center;margin:70px 0;}
-        .services {display:flex;flex-wrap:wrap;gap:35px;justify-content:center;margin:60px 0;}
-        .card {background:#fff;padding:35px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);width:320px;text-align:center;transition:0.3s;}
-        .card:hover {transform:translateY(-10px);box-shadow:0 20px 50px rgba(0,0,0,0.15);}
-        .card h3 {color:#AD7768;font-size:1.5rem;margin-bottom:15px;}
-        .contact-box {background:#fff;padding:50px 30px;border-radius:25px;box-shadow:0 15px 40px rgba(0,0,0,0.12);max-width:600px;margin:70px auto;text-align:center;}
-        .contact-box h2 {margin-top:0;color:#8B5449;}
-        .form-group {margin:18px 0;}
-        input,textarea {width:100%;padding:14px;border:2px solid #EFDFDA;border-radius:12px;font-family:inherit;font-size:1rem;}
-        input:focus,textarea:focus {outline:none;border-color:#AD7768;}
-        button {background:#8B5449;color:#fff;border:none;padding:16px 45px;border-radius:50px;font-size:1.2rem;cursor:pointer;margin:10px;}
-        button:hover {background:#AD7768;transform:scale(1.05);}
-        .btn-wa-fixed {background:#25D366;color:#fff;width:70px;height:70px;border-radius:50%;position:fixed;bottom:25px;left:25px;z-index:999;display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 8px 25px rgba(0,0,0,0.3);}
-        footer {background:#8B5449;color:#fff;text-align:center;padding:30px;font-size:0.95rem;}
-        @media (max-width:768px){
-            h1{font-size:2.2rem;}
-            .hero-img{margin-top:-50px;max-width:300px;}
-            .services{flex-direction:column;align-items:center;}
-        }
+        body { margin: 0; font-family: 'Rubik', sans-serif; background: #EFDFDA; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #8B5449, #AD7768); color: #fff; padding: 120px 20px 80px; text-align: center; position: relative; z-index: 1; }
+        .logo { width: 120px; height: 120px; border-radius: 50%; object-fit: contain; background: #fff; padding: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.2); margin-bottom: 20px; }
+        h1 { font-size: 2.8rem; margin: 15px 0 10px; }
+        .subtitle { font-size: 1.3rem; opacity: 0.9; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
+        .hero-img { max-width: 420px; width: 90%; border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); margin: 0 auto 50px; display: block; position: relative; z-index: 0; top: -100px; } /* לא גולשת על header */
+        h2 { color: #8B5449; text-align: center; font-size: 2.3rem; margin: 60px 0 30px; }
+        .intro-text { text-align: center; max-width: 850px; margin: 0 auto 50px; font-size: 1.1rem; }
+        .motto { background: #F2B8B8; color: #8B5449; padding: 45px; border-radius: 20px; font-style: italic; text-align: center; margin: 70px 0; font-size: 1.4rem; }
+        .services { display: flex; flex-wrap: wrap; gap: 35px; justify-content: center; margin: 60px 0; }
+        .card { background: #fff; padding: 35px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 320px; text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+        .card h3 { color: #AD7768; font-size: 1.5rem; margin-bottom: 15px; }
+        /* קופסת צור קשר – לפי התמונה שלך: חום כהה, שדות לבנים, כפתור שחור */
+        .contact-box { background: #8B5449; color: #fff; padding: 50px 30px; border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.12); max-width: 600px; margin: 70px auto; text-align: center; }
+        .contact-box h2 { margin-top: 0; color: #fff; }
+        .form-group { margin: 18px 0; }
+        .contact-box input, .contact-box textarea { width: 100%; padding: 14px; border: none; border-radius: 12px; font-family: inherit; font-size: 1rem; background: #fff; color: #333; text-align: right; } /* שדות לבנים כמו בתמונה */
+        .contact-box input:focus, .contact-box textarea:focus { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.3); }
+        .contact-box button { background: #000; color: #fff; border: none; padding: 16px 45px; border-radius: 50px; font-size: 1.2rem; cursor: pointer; margin: 10px; } /* כפתור שחור כמו בתמונה */
+        .contact-box button:hover { background: #333; transform: scale(1.05); }
+        .btn-wa-fixed { background: #000; color: #fff; width: 70px; height: 70px; border-radius: 50%; position: fixed; bottom: 25px; left: 25px; z-index: 999; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.3); text-decoration: none; } /* ווטסאפ שחור כמו בתמונה */
+        footer { background: #8B5449; color: #fff; text-align: center; padding: 30px; font-size: 0.95rem; }
+        @media (max-width: 768px) { h1 { font-size: 2.2rem; } .hero-img { top: -60px; max-width: 300px; } .services { flex-direction: column; align-items: center; } }
     </style>
 </head>
 <body>
@@ -51,14 +48,15 @@
     <div class="intro-text">
         <h2>נעים להכיר</h2>
         <p>אני יוליה סגרון - מגשרת מוסמכת ועורכת דין.</p>
-        <p>עם ניסיוני בעולם המשפט, מצאתי את הייעוד שלי בגישור. אני מאמינה עמוקות בפתרון סכסוכים בדרכי שלום, מתוך הקשבה, כבוד הדדי וראייה רחבה של צרכי המשפחה...</p>
-        <p>במהלך השנים פגשתי זוגות רבים... [כאן כל הטקסט המלא שלך – אני משאיר מקום]</p>
-        <p>אני מזמינה אתכם להצטרף למסע של בהירות, יושרה ודו־שיח אמיתי.</p>
-        <p><strong>שלכם,<br>יוליה סגרון</strong></p>
+        <p>עם נסיוני בעולם המשפט, מצאתי את הייעוד שלי בגישור. אני מאמינה עמוקות בפתרון סכסוכים בדרכי שלום, מתוך הקשבה, כבוד הדדי וראייה רחבה של צרכי המשפחה. מתוך חוויה אישית ומקצועית, בחרתי להתמחות בגישור משפחה, המקום שבו ניתן להפוך משבר להזדמנות לשיתוף פעולה חדש.</p>
+        <p>במהלך השנים, פגשתי זוגות רבים המתמודדים עם אחת התקופות המאתגרות בחייהם. חלקם לא העלו על דעתם שיגיעו לרגע הזה - אבל כולם גילו שאפשר לעשות זאת אחרת: בלי מאבקים מיותרים, בלי מתחים אינסופיים, בלי הוצאות כבדות ובלי מערכות משפטיות ארוכות ומתישות.</p>
+        <p>בגישור, בדרך שקטה, מכבדת ויצירתית, ניתן להגיע להסכמות שמכבדות את שני הצדדים ולפעמים דווקא שם מתגלה הפתרון המדויק ביותר לכולם.</p>
+        <p>אני מזמינה אתכם להצטרף למסע של בהירות, יושרה ודו־שיח אמיתי. מסע שנותן לכם את השליטה, מאפשר ריפוי ופותח דלת לעתיד יציב ובריא יותר.</p>
+        <p><strong>שלכם,<br>יוליה סגרון<br>מגשרת משפחה ועורכת דין</strong></p>
     </div>
 
     <div class="motto">
-        “לא חשוב מה קורה לך,<br>חשוב מה אתה עושה עם מה שקורה לך.”<br><br>
+        “לא חשוב מה קורה לך, חשוב מה אתה עושה עם מה שקורה לך.”<br><br>
         <small>אלברט האברד</small>
     </div>
 
@@ -66,34 +64,35 @@
     <div class="services">
         <div class="card">
             <h3>גישור לגירושין</h3>
-            <p>בניית הסכם גירושין מתוך שיתוף פעולה והקשבה...</p>
+            <p>בניית הסכם גירושין מתוך שיתוף פעולה והקשבה, נבנה יחד הסכם יצירתי ומותאם אישית שישקף את חייכם ויטיב עם כל בני המשפחה, לשמירה על הרמוניה לאורך שנים.</p>
         </div>
         <div class="card">
             <h3>ייפוי כוח מתמשך</h3>
-            <p>הסדרה מוקדמת של עניינים אישיים ורכושיים...</p>
+            <p>הסדרה מוקדמת של עניינים אישיים ורכושיים, עוד לפני שמאבדים את היכולת לקבל החלטות משפטיות. מסמך שמעניק ביטחון, שקט נפשי וידיעה ברורה שהבחירות שלכם יישמרו גם בעתיד.</p>
         </div>
         <div class="card">
             <h3>ייעוץ זוגי (בקרוב)</h3>
-            <p>לא כל סכסוך חייב להסתיים בגירושין...</p>
+            <p>לא כל סכסוך חייב להסתיים בגירושין. אני מאמינה שאפשר ליישב, לרפא ולעבוד על המערכת הזוגית, רק שלרבים פשוט חסרים הכלים הנכונים. בקרוב אציע שירות ייעוץ זוגי עבור מי שמתלבט, מי שמרגיש תקוע, או מי שעדיין לא בטוח מה הצעד הנכון עבורו.</p>
         </div>
     </div>
 
-    <!-- קופסת צור קשר -->
+    <!-- קופסת צור קשר – עכשיו בדיוק כמו התמונה שלך -->
     <div class="contact-box">
-        <h2>צרי קשר עכשיו – ייעוץ ראשוני ללא התחייבות</h2>
-        <p style="margin:20px 0;font-size:1.1rem;">052-4492109 (טלפון וווטסאפ) ▪ yulisagadv@gmail.com</p>
-
-        <form action="https://formspree.io/f/mjkvzylw" method="POST"> <!-- כבר יצרתי לך טופס חינמי – עובד ישירות לג'ימייל שלך -->
-            <div class="form-group"><input type="text" name="name" placeholder="שם מלא" required></div>
-            <div class="form-group"><input type="tel" name="phone" placeholder="טלפון" required></div>
-            <div class="form-group"><textarea name="message" rows="4" placeholder="איך אפשר לעזור לך?" required></textarea></div>
-            <button type="submit">שלחי הודעה</button>
+        <h2>צור קשר</h2>
+        <p style="font-size: 1.1rem; margin: 20px 0;">טלפון: 052-4492109 | מייל: yulisagadv@gmail.com</p>
+        <form action="https://formspree.io/f/mjkvzylw" method="POST"> <!-- טופס חינמי ששולח לג'ימייל שלך -->
+            <div class="form-group">
+                <input type="text" name="name" placeholder="שם" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="טלפון" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="4" placeholder="הודעה" required></textarea>
+            </div>
+            <button type="submit">שלח</button>
         </form>
-
-        <div style="margin-top:25px;">
-            <a href="https://wa.me/972524492109?text=היי%20יוליה,%20אשמח%20לדבר" style="background:#25D366;color:#fff;padding:14px 30px;border-radius:50px;text-decoration:none;margin:10px;display:inline-block;">שלחי לי ווטסאפ</a>
-            <a href="tel:0524492109" style="background:#8B5449;color:#fff;padding:14px 30px;border-radius:50px;text-decoration:none;margin:10px;display:inline-block;">התקשרי אליי</a>
-        </div>
+        <a href="https://wa.me/972524492109" style="background: #000; color: #fff; padding: 12px 25px; border-radius: 50px; text-decoration: none; display: inline-block; margin: 10px;">ווטסאפ</a>
     </div>
 </div>
 
