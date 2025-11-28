@@ -88,9 +88,14 @@
         footer{background:#8B5449;color:#fff;text-align:center;padding:40px;font-size:0.95rem}
         @media (max-width: 768px) {
             .logo {
-                width: 130px !important;
-                min-width: 110px !important;
+                display: inline-block;           /* <--- שורה חדשה וחשובה לתיקון */
+                width: 160px;
                 height: auto;
+                filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)) drop-shadow(0 0 8px rgba(255,255,255,0.3));
+                background: transparent !important;
+                padding: 0;
+                border: none;
+                border-radius: 0;
             }
         }
     </style>
